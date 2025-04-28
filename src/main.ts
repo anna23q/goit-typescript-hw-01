@@ -145,7 +145,11 @@ async function runAll() {
   // ================= generics task - 3 =================
 
   console.log((generics = ` ============== Generics task - 3 ============== `));
+  const app = document.getElementById('app');
 
+  if (app) {
+    app.innerHTML = '<h1>Hello Vite + TypeScript!</h1>';
+  }
   const objA = { name: "Bob", age: 19 };
   const objB = { job: "Software-Developer", country: "Ireland" };
 
